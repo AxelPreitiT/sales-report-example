@@ -8,25 +8,18 @@
                     "brands":[
                         {
                             "name":"Fruit1",
-                            "sales":[
-                                {
-                                    "January":12,
-                                    "Febraury":15,
-                                    "March":24,
-                                    "April":65
-                                }
-                            ]
+                            "sales": {
+                                "months": ["January", "Febraury", "March", "April"],
+                                "amount": [12, 15, 24, 65]
+                            }
+                            
                         },
                         {
                             "name":"Fruit2",
-                            "sales":[
-                                {
-                                    "January":22,
-                                    "Febraury":31,
-                                    "March":10,
-                                    "April":34
-                                }
-                            ]
+                            "sales": {
+                                "months": ["January", "Febraury", "March", "April"],
+                                "amount": [22, 31, 10, 34]
+                            }
                         }
                     ]
                 },
@@ -35,25 +28,17 @@
                     "brands":[
                         {
                             "name":"Vegetable1",
-                            "sales":[
-                                {
-                                    "January":5,
-                                    "Febraury":12,
-                                    "March":20,
-                                    "April":92
-                                }
-                            ]
+                            "sales": {
+                                "months": ["January", "Febraury", "March", "April"],
+                                "amount": [5, 12, 20, 92]
+                            }
                         },
                         {
                             "name":"Vegetable2",
-                            "sales":[
-                                {
-                                    "January":14,
-                                    "Febraury":17,
-                                    "March":54,
-                                    "April":45
-                                }
-                            ]
+                            "sales": {
+                                "months": ["January", "Febraury", "March", "April"],
+                                "amount": [14, 17, 54, 45]
+                            }
                         }
                     ]
                 }
@@ -67,25 +52,17 @@
                     "brands":[
                         {
                             "name":"Car1",
-                            "sales":[
-                                {
-                                    "January":2,
-                                    "Febraury":18,
-                                    "March":9,
-                                    "April":12
-                                }
-                            ]
+                            "sales": {
+                                "months": ["January", "Febraury", "March", "April"],
+                                "amount": [2, 18, 9, 12]
+                            }
                         },
                         {
                             "name":"Car2",
-                            "sales":[
-                                {
-                                    "January":23,
-                                    "Febraury":8,
-                                    "March":5,
-                                    "April":10
-                                }
-                            ]
+                            "sales": {
+                                "months": ["January", "Febraury", "March", "April"],
+                                "amount": [23, 8, 5, 10]
+                            }
                         }
                     ]
                 },
@@ -94,25 +71,17 @@
                     "brands":[
                         {
                             "name":"Boat1",
-                            "sales":[
-                                {
-                                    "January":5,
-                                    "Febraury":3,
-                                    "March":2,
-                                    "April":6
-                                }
-                            ]
+                            "sales": {
+                                "months": ["January", "Febraury", "March", "April"],
+                                "amount": [5, 3, 2, 6]
+                            }
                         },
                         {
                             "name":"Boat2",
-                            "sales":[
-                                {
-                                    "January":1,
-                                    "Febraury":10,
-                                    "March":2,
-                                    "April":7
-                                }
-                            ]
+                            "sales": {
+                                "months": ["January", "Febraury", "March", "April"],
+                                "amount": [1, 10, 2, 7]
+                            }
                         }
                     ]
                 }
