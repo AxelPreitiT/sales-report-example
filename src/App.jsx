@@ -25,21 +25,6 @@ export function App(){
         setBrandValue(event.target.value);
     }
 
-    const func = () => {
-        console.log(catValue);
-        console.log(Sales);
-        return Sales.categories.find((category) => category.name === catValue).products.find((product) => product.name === prodValue).brands.find((brand) => brand.name === brandValue).sales.months;
-    }
-
-    const func2 = () => {
-        console.log(catValue);
-        console.log(Sales);
-        var a = Sales.categories.find((category) => category.name === catValue).products.find((product) => product.name === prodValue).brands.find((brand) => brand.name === brandValue);
-        console.log(a);
-        console.log(brandValue);
-        return Sales.categories.find((category) => category.name === catValue).products.find((product) => product.name === prodValue).brands.find((brand) => brand.name === brandValue).sales.amount
-    }
-
     // ---------------------------------------------------------------------------------------------------
     // BAR CHART
     const data = {
@@ -57,14 +42,40 @@ export function App(){
 
     const options = {
         maintainAspectRatio: true,
-        responsive: true
+        responsive: true,
+        aspectRatio: 3|1,
+        scales:{
+            yAxes:{
+                title: {
+                    display: true,
+                    text: "Sales"
+                } 
+            },
+            xAxes:{
+                title:{
+                    display: true,
+                    text: "Months"
+                }
+            }
+        }
     };
 
     // ---------------------------------------------------------------------------------------------------
 
     return (
-        <Fragment>
-            <Fragment>
+        <div>
+            <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-evenly',
+            }}>
+                <h1>Sales by month for:</h1>
+            </div>
+            <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-evenly'
+            }}>
                 <label>Category:&nbsp;
                     <select value={catValue} onChange={handleChangeCat}>
                         {Sales.categories.map((category) => (
@@ -88,11 +99,11 @@ export function App(){
                         ))}
                     </select>
                 </label>
-            </Fragment>
-            <Fragment>
+            </div>
+            <div>
                 <Bar data={data} options={options}/>   
-            </Fragment>
-        </Fragment>
+            </div>
+        </div>
         
     );
 }
